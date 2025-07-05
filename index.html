@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ghibli AI Image Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Ghibli AI Image Generator</h1>
+
+    <form id="imageForm">
+      <label for="image">Upload an image (optional):</label>
+      <input type="file" id="image" name="image" accept="image/*" />
+
+      <label for="prompt">Enter prompt:</label>
+      <textarea id="prompt" name="prompt" rows="4" required></textarea>
+
+      <label for="style">Select style:</label>
+      <select id="style" name="style">
+        <option value="anime">Anime</option>
+        <option value="fantasy_art">Fantasy Art</option>
+        <option value="comic_book">Comic Book</option>
+        <option value="digital_painting">Digital Painting</option>
+        <option value="photographic">Photographic</option>
+      </select>
+
+      <button type="submit">Generate Image</button>
+    </form>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
